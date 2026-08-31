@@ -1,6 +1,5 @@
 import Loader from "./components/Loader";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
@@ -15,20 +14,21 @@ export default function App() {
   useReveal();
 
   return (
-    <>
+    <div className="layout">
       <Loader />
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Education />
-        <Projects />
-        <ExtraProjects />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+      <Sidebar />
+      <div className="content">
+        <main>
+          <About />
+          <Skills />
+          <Experience />
+          <Education />
+          <Projects />
+          <ExtraProjects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </div>
   );
 }

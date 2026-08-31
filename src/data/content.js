@@ -12,8 +12,12 @@ export const profile = {
   github: "https://github.com/Juanma-Alvarado",
   linkedin: "https://www.linkedin.com/in/juanma-alvarado/",
   cvUrl: withBase("/cv/Juan-Manuel-Alvarado-CV.pdf"),
-  summary:
-    "En e-commerce, gran parte de las sesiones de navegación nunca termina en una compra — y detectar a tiempo cuáles sí tienen intención real es la diferencia entre desperdiciar el presupuesto de marketing o invertirlo donde funciona. Trabajé el modelado y el feature engineering de un pipeline de clasificación (dataset Online Shoppers Purchasing Intention, UCI, 12.330 sesiones) que resuelve exactamente eso, alcanzando un ROC-AUC de 0,94. Manejo SQL, Python, Pandas, NumPy y Power BI. Sumo una base en finanzas y negocios internacionales (Universidad de Córdoba) que aporta visión de negocio para roles en Fintech o Consultoría, tanto en análisis de datos como en ciencia de datos.",
+  // Gancho corto para el hero/sidebar — no repite el texto de "about".
+  hook:
+    "Encuentro, en millones de clics, la señal que anticipa una compra antes de que pase.",
+  // Narrativa más larga para la sección About — mismos hechos reales del CV, otro tono.
+  about:
+    "Soy Juan Manuel, Data Analyst Jr. y Data Scientist Jr. en Córdoba, Colombia. Me metí en datos porque me engancha encontrar el patrón que nadie está mirando: en mi proyecto más reciente ayudé a construir un modelo que predice qué sesiones de un e-commerce realmente terminan en compra —con un ROC-AUC de 0,94— para que el presupuesto de marketing deje de dispararse a ciegas. Trabajo con SQL, Python, Pandas, NumPy y Power BI, y sumo una base en finanzas y negocios internacionales de la Universidad de Córdoba, algo que me da una mirada de negocio a la hora de modelar. Sigo formándome y construyendo proyectos — estos son los que más orgullo me dan.",
 };
 
 export const skills = {

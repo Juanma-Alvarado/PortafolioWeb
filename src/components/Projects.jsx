@@ -2,51 +2,33 @@ import { projects } from "../data/content";
 
 export default function Projects() {
   return (
-    <section className="section" id="work">
-      <div className="bd-grid">
-        <span className="section-label reveal">// 05. proyectos</span>
-        <h2 className="section-title reveal">Work</h2>
+    <section className="content-section" id="work">
+      <span className="eyebrow reveal">05</span>
+      <h2 className="content-title reveal">Work</h2>
 
-        <div className="work__grid reveal">
-          {projects.map((p) => (
-            <div className="card work__card" key={p.name}>
-              <h3 className="work__title">
+      <div className="project-list reveal">
+        {projects.map((p) => (
+          <article className="project" key={p.name}>
+            <div className="project__head">
+              <h3 className="project__title">
                 {p.name}
-                {p.team && <span className="work__team-badge">equipo</span>}
+                {p.team && <span className="project__badge">equipo</span>}
               </h3>
-              <p className="work__desc">{p.description}</p>
-
-              <div className="work__tags">
-                {p.stack.map((s) => (
-                  <span className="tag" key={s}>
-                    {s}
-                  </span>
-                ))}
-              </div>
-
-              <div className="work__links">
-                <a
-                  href={p.repo}
-                  className="work__link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="bx bxl-github"></i> Repo
+              <div className="project__links">
+                <a href={p.repo} target="_blank" rel="noreferrer" aria-label="Repositorio">
+                  <i className="bx bxl-github"></i>
                 </a>
                 {p.demo && (
-                  <a
-                    href={p.demo}
-                    className="work__link"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bx-link-external"></i> Demo
+                  <a href={p.demo} target="_blank" rel="noreferrer" aria-label="Demo">
+                    <i className="bx bx-link-external"></i>
                   </a>
                 )}
               </div>
             </div>
-          ))}
-        </div>
+            <p className="project__desc">{p.description}</p>
+            <p className="project__stack">{p.stack.join(" · ")}</p>
+          </article>
+        ))}
       </div>
     </section>
   );

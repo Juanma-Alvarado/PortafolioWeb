@@ -2,24 +2,23 @@ import { education } from "../data/content";
 
 export default function Education() {
   return (
-    <section className="section" id="education">
-      <div className="bd-grid">
-        <span className="section-label reveal">// 04. educación</span>
-        <h2 className="section-title reveal">Education</h2>
+    <section className="content-section" id="education">
+      <span className="eyebrow reveal">04</span>
+      <h2 className="content-title reveal">Education</h2>
 
-        <div className="education__grid reveal">
-          {education.map((edu) => (
-            <div className="card" key={edu.institution}>
-              <p className="edu__place">{edu.place}</p>
-              <p className="edu__degree">{edu.institution}</p>
-              <p className="edu__degree" style={{ fontWeight: 400, color: "var(--text-secondary)" }}>
-                {edu.degree}
-              </p>
-              <p className="edu__date">{edu.date}</p>
-              <p className="edu__detail">{edu.detail}</p>
+      <div className="reveal">
+        {education.map((edu) => (
+          <div className="edu-item" key={edu.institution}>
+            <div className="edu-item__head">
+              <h3 className="edu-item__title">{edu.institution}</h3>
+              <span className="edu-item__date">{edu.date}</span>
             </div>
-          ))}
-        </div>
+            <p className="edu-item__degree">
+              {edu.degree} · {edu.place}
+            </p>
+            <p className="edu-item__detail">{edu.detail}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
