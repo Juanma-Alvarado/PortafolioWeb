@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
+  background: linear-gradient(#3a4149, #111722);
+  font-family: "Righteous", cursive;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  touch-action: none;
+}
+
+#titulo {
+  color: #4cffd7;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.esconder {
+  display: none !important;
+}
+
+#bannerRotarTelefono {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: coral;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+#botonCerrarBanner {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  background-color: coral;
+  color: white;
+  padding: 6px;
+}
+
+#puntos {
+  color: #6e7888;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+#puntos:hover {
+  color: #4cffd7;
+}
+
+#contenedorJuego {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+}
+
+#contenedorNintendo {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+}
+
+#juegoOverlay {
+  position: relative;
+  border-radius: 25px;
+}
+
+#juegoCanvas {
+  width: 80%;
+  margin-left: 60px;
+  background-color: #181825;
+  border-radius: 25px;
+}
+
+#nintendo {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #contenedorNintendo {
+    width: 65%;
+    border-radius: 25px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #contenedorNintendo {
+    width: 50%;
+    border-radius: 25px;
+  }
+
+  body {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #contenedorNintendo {
+    width: 35%;
+  }
+
+  body {
+    font-size: 24px;
+  }
+}
+
+.shake-horizontal {
+  -webkit-animation: shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+/**
+   * ----------------------------------------
+   * animation shake-horizontal
+   * ----------------------------------------
+   */
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
