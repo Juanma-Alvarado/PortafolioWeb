@@ -2,44 +2,22 @@ import { skills } from "../data/content";
 
 export default function Skills() {
   return (
-    <section className="section" id="skills">
-      <div className="bd-grid">
-        <span className="section-label reveal">// 02. skills</span>
-        <h2 className="section-title reveal">Skills</h2>
+    <section className="content-section" id="skills">
+      <span className="eyebrow reveal">02</span>
+      <h2 className="content-title reveal">Skills</h2>
 
-        <div className="reveal">
-          <div className="skills__group">
-            <p className="skills__group-title">técnicas</p>
-            <div className="skills__tags">
-              {skills.técnicas.map((s) => (
-                <span className="tag" key={s}>
-                  {s}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="skills__group">
-            <p className="skills__group-title">blandas</p>
-            <div className="skills__tags">
-              {skills.blandas.map((s) => (
-                <span className="tag" key={s}>
-                  {s}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="skills__group">
-            <p className="skills__group-title">idiomas</p>
-            <div className="skills__tags">
-              {skills.idiomas.map((s) => (
-                <span className="tag" key={s}>
-                  {s}
-                </span>
-              ))}
-            </div>
-          </div>
+      <div className="skills reveal">
+        <div className="skills__row">
+          <span className="skills__row-label">técnicas</span>
+          <p className="skills__row-list">{skills.técnicas.join(" · ")}</p>
+        </div>
+        <div className="skills__row">
+          <span className="skills__row-label">blandas</span>
+          <p className="skills__row-list">{skills.blandas.join(" · ")}</p>
+        </div>
+        <div className="skills__row">
+          <span className="skills__row-label">idiomas</span>
+          <p className="skills__row-list">{skills.idiomas.join(" · ")}</p>
         </div>
       </div>
     </section>
