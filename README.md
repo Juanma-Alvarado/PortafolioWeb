@@ -2,7 +2,7 @@
 
 Sitio personal de **Juan Manuel Alvarado Pallares**, Data Analyst Jr. & Data Scientist Jr., con perfil, experiencia, educación y proyectos reales de análisis de datos y machine learning.
 
-🔗 **Sitio publicado:** [juanma-alvarado.github.io/Protafolio-Web](https://juanma-alvarado.github.io/Protafolio-Web/)
+🔗 **Sitio publicado:** [juanma-alvarado.github.io/PortafolioWeb](https://juanma-alvarado.github.io/PortafolioWeb/)
 
 ## Capturas
 
@@ -20,7 +20,7 @@ Sitio personal de **Juan Manuel Alvarado Pallares**, Data Analyst Jr. & Data Sci
 ## Tecnologías
 
 - [React 18](https://react.dev/) + [Vite](https://vitejs.dev/) — SPA de una sola página con navegación por anclas.
-- CSS plano con *custom properties* (sin frameworks de CSS) — paleta dark, tipografía monoespaciada (JetBrains Mono) + sans (Inter), efectos de glow en azul.
+- CSS plano con *custom properties* (sin frameworks de CSS) — paleta dark con acentos azules, tipografía Sora (títulos) + Inter (cuerpo), JetBrains Mono solo en detalles pequeños.
 - [Boxicons](https://boxicons.com/) para iconografía.
 - Sin backend: contacto vía enlaces reales (`mailto:`, GitHub, LinkedIn) y descarga directa del CV.
 
@@ -29,7 +29,7 @@ Sitio personal de **Juan Manuel Alvarado Pallares**, Data Analyst Jr. & Data Sci
 ```
 ├── index.html          # entry point de Vite
 ├── src/
-│   ├── components/      # Header, Hero, About, Skills, Experience, Education, Projects, ExtraProjects, Contact, Footer
+│   ├── components/      # Sidebar, About, Skills, Experience, Education, Projects, ExtraProjects, Contact, Footer
 │   ├── data/content.js  # todo el contenido (perfil, experiencia, educación, skills, proyectos)
 │   ├── styles/index.css # tema visual (variables de color, tipografía, layout)
 │   └── hooks/useReveal.js
@@ -46,7 +46,7 @@ npm install
 npm run dev
 ```
 
-Abre `http://localhost:5173/Protafolio-Web/`.
+Abre `http://localhost:5173/PortafolioWeb/`.
 
 ## Build y despliegue
 
