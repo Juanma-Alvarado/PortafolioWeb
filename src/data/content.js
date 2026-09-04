@@ -102,8 +102,9 @@ export const projects = [
   },
   {
     name: "MovieTime",
-    description: "Busca tus películas favoritas 🎞️",
-    stack: ["JavaScript", "CSS", "API REST"],
+    description:
+      "Buscador de películas en tiempo real que consume la API de TMDb, con filtrado instantáneo y paginación.",
+    stack: ["JavaScript", "HTML5", "CSS3", "TMDb API"],
     repo: "https://github.com/Juanma-Alvarado/MovieTime",
     demo: "https://movietim.netlify.app/",
   },
