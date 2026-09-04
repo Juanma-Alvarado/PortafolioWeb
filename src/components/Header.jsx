@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="nav-bar">
-      <nav className="nav-bar__inner">
+      <nav className="nav-bar__pill">
         {LINKS.map((link) => (
           <a
             key={link.id}
