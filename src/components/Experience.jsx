@@ -22,7 +22,13 @@ export default function Experience() {
             ))}
           </ul>
 
-          <p className="timeline-item__stack">{exp.stack.join(" · ")}</p>
+          <ul className="chip-list timeline-item__stack">
+            {exp.stack.map((tech) => (
+              <li className="chip chip--sm" key={tech}>
+                {tech}
+              </li>
+            ))}
+          </ul>
 
           <a
             href={exp.repo}
