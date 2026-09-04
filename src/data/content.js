@@ -93,10 +93,11 @@ export const education = [
 
 export const projects = [
   {
-    name: "Mlops_Pipeline",
-    description: "Pipeline de machine learning.",
-    stack: ["Python", "Jupyter Notebook", "MLOps"],
-    repo: "https://github.com/Juanma-Alvarado/Mlops_Pipeline",
+    name: "CreditFlow",
+    description:
+      "Pipeline de MLOps end-to-end para predicción de riesgo crediticio, con monitoreo de Data Drift y despliegue vía CI/CD.",
+    stack: ["Python", "Scikit-learn", "FastAPI", "Streamlit", "Docker", "CI/CD"],
+    repo: "https://github.com/Juanma-Alvarado/CreditFlow",
     demo: null,
   },
   {
