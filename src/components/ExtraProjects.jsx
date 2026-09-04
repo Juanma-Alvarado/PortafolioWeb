@@ -2,8 +2,8 @@ import { extraProjects } from "../data/content";
 
 export default function ExtraProjects() {
   return (
-    <section className="content-section content-section--tight" id="extra">
-      <span className="eyebrow reveal">06</span>
+    <section className="content-section content-section--tight" id="playground">
+      <span className="eyebrow reveal">04</span>
       <h2 className="content-title content-title--sm reveal">Playground</h2>
 
       <div className="playground reveal">

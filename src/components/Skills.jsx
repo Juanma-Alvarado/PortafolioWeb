@@ -9,7 +9,7 @@ const ROWS = [
 export default function Skills() {
   return (
     <section className="content-section" id="skills">
-      <span className="eyebrow reveal">02</span>
+      <span className="eyebrow reveal">03</span>
       <h2 className="content-title reveal">Skills</h2>
 
       <div className="skills reveal">

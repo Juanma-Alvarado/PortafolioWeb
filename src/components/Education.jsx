@@ -2,9 +2,9 @@ import { education } from "../data/content";
 
 export default function Education() {
   return (
-    <section className="content-section" id="education">
-      <span className="eyebrow reveal">04</span>
-      <h2 className="content-title reveal">Education</h2>
+    <section className="content-section" id="educacion">
+      <span className="eyebrow reveal">02</span>
+      <h2 className="content-title reveal">Educación</h2>
 
       <div className="reveal">
         {education.map((edu) => (
