@@ -35,14 +35,18 @@ export default function Sidebar() {
 
   return (
     <header className="sidebar">
+      <div className="sidebar__glow" aria-hidden="true"></div>
+
       <div className="sidebar__top">
         <div className="sidebar__identity">
-          <img
-            src={withBase("/img/profile.png")}
-            alt={profile.name}
-            className="sidebar__avatar"
-          />
-          <div>
+          <div className="sidebar__avatar-wrap anim-blur-in">
+            <img
+              src={withBase("/img/profile.png")}
+              alt={profile.name}
+              className="sidebar__avatar"
+            />
+          </div>
+          <div className="anim-fade-up delay-1">
             <h1 className="sidebar__name">{profile.shortName}</h1>
             <p className="sidebar__role">{profile.title}</p>
           </div>
@@ -57,7 +61,7 @@ export default function Sidebar() {
         </button>
       </div>
 
-      <p className="sidebar__hook">{profile.hook}</p>
+      <p className="sidebar__hook anim-fade-up delay-2">{profile.hook}</p>
 
       <nav className={`sidebar__nav${open ? " show" : ""}`}>
         <ul>
@@ -76,13 +80,13 @@ export default function Sidebar() {
         </ul>
       </nav>
 
-      <div className="sidebar__actions">
+      <div className="sidebar__actions anim-fade-up delay-3">
         <a href={profile.cvUrl} download className="button button--sm">
           Descargar CV <i className="bx bx-download"></i>
         </a>
       </div>
 
-      <div className="sidebar__social">
+      <div className="sidebar__social anim-fade-up delay-3">
         <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
           <i className="bx bxl-github"></i>
         </a>

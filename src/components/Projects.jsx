@@ -26,7 +26,13 @@ export default function Projects() {
               </div>
             </div>
             <p className="project__desc">{p.description}</p>
-            <p className="project__stack">{p.stack.join(" · ")}</p>
+            <ul className="chip-list">
+              {p.stack.map((tech) => (
+                <li className="chip chip--sm" key={tech}>
+                  {tech}
+                </li>
+              ))}
+            </ul>
           </article>
         ))}
       </div>
