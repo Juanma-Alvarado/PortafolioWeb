@@ -6,17 +6,22 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="hero__glow" aria-hidden="true"></div>
 
-      <div className="hero__avatar-wrap anim-blur-in">
-        <img
-          src={withBase("/img/profile.png")}
-          alt={profile.name}
-          className="hero__avatar"
-        />
+      <div className="hero__intro anim-blur-in">
+        <div className="hero__avatar-wrap">
+          <div className="hero__avatar-glow" aria-hidden="true"></div>
+          <img
+            src={withBase("/img/profile.png")}
+            alt={profile.name}
+            className="hero__avatar"
+          />
+        </div>
+        <span className="hero__badge">
+          <i className="bx bxs-circle hero__badge-dot"></i> Disponible para trabajar
+        </span>
       </div>
 
-      <p className="hero__role anim-fade-up delay-1">{profile.title}</p>
       <h1 className="hero__title anim-fade-up delay-1">
-        Hey, soy <em>{profile.shortName}</em>
+        Hey, soy <span className="hero__name">{profile.shortName}</span>
       </h1>
 
       <p className="hero__hook anim-fade-up delay-2">{profile.hook}</p>
