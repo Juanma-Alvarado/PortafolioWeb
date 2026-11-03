@@ -60,7 +60,7 @@ export const experience = [
       "Garanticé la validez de las métricas reportadas, como resultado de un feature engineering cuidadoso y una separación estratificada train/test (80/20) en Python, para prevenir data leakage en el pipeline de modelado.",
       "Habilité la priorización de acciones comerciales (cross-selling y retención) sobre miles de sesiones de usuario, como resultado de diseñar una segmentación de intención de compra en tres niveles (alta, media, baja) a partir de las probabilidades del modelo.",
     ],
-    repo: "https://github.com/lucasbottino9/Proyecto-Final-Henry",
+    repo: "https://github.com/Juanma-Alvarado/MetricMindset",
   },
 ];
 
@@ -113,7 +113,7 @@ export const projects = [
     description:
       "Sistema de recomendación inteligente para e-commerce que combina predicción de intención de compra con recomendaciones de productos personalizadas, usando Machine Learning, FastAPI, Streamlit y buenas prácticas de MLOps. Proyecto final en equipo (4 personas) del bootcamp de Ciencia de Datos de Henry.",
     stack: ["Python", "Scikit-learn", "LightGBM", "FastAPI", "Streamlit", "MLOps"],
-    repo: "https://github.com/lucasbottino9/Proyecto-Final-Henry",
+    repo: "https://github.com/Juanma-Alvarado/MetricMindset",
     demo: null,
     team: true,
   },
